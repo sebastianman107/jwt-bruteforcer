@@ -1,6 +1,6 @@
-#JWT token brute forcer
+# JWT token brute forcer
 
-###This is a python script for bruteforcing the JWT token using a predefined secrets list.
+### This is a python script for bruteforcing the JWT token using a predefined secrets list.
 
 Usage:
 1. Replace the "payload" value in the jwt_secret.py by adding decoded payload from the known JWT token.
