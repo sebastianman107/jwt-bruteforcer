@@ -3,18 +3,21 @@
 ## This is a python script for cracking the JWT token.
 
 Usage:
-` python3 jwt_secret.py <jwt_token> [<chars>] [<length>] `
+` python3 jwt_secret.py <jwt_token> [<max_length>] [<chars>] `
 
 where:
-jwt_token: full HS256 JWT token  
-chars: optional characters to included in bruteforcing (default "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890")  
-length: the length of the secret  
+jwt_token: full HS256 JWT token
+min_length: the minimum length of the secret (default 1) 
+max_length: the maximum length of the secret (default 20)
+chars: optional characters to included in bruteforcing (default "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890")
+
 
 Example usage:
-` python3 jwt_secret.py 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjpudWxsfQ.TeFEGHKT2ZnIRduOnDVbzPeW8CxkH80S7H_5ZuOdV4I' 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ' 4 `  
-Output:  
-Secret found: test  
-python3 jwt_secret.py  'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'  32.39s user 0.97s system 97% cpu 34.346 total  
+python3 jwt_secret.py "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZXhwIjoxNjcxODIwODg1fQ.jP6P7ljkT9bNvg6aik2p4DFwhQPTCRrPrY6L-hOHrhw" 6 7 secrt
+Secret found: secret
 
 Requirements:
 python3
+jwt
+itertools
+sys
