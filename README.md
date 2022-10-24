@@ -3,7 +3,7 @@
 ## This is a python script for cracking the JWT token.
 
 Usage:
-` python3 jwt_secret.py <jwt_token> [<max_length>] [<chars>] `
+` python3 jwt_secret.py <jwt_token> [<min_length>] [<max_length>] [<chars>] `
 
 where:
 jwt_token: full HS256 JWT token
