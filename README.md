@@ -8,13 +8,13 @@ Usage:
 
 where:
 
-`jwt_token: full HS256 JWT token `
+jwt_token: full HS256 JWT token 
 
-`min_length: the minimum length of the secret (default 1)`
+min_length: the minimum length of the secret (default 1)
 
-`max_length: the maximum length of the secret (default 20)`
+max_length: the maximum length of the secret (default 20)
 
-`chars: optional characters to included in bruteforcing (default "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890")`
+chars: optional characters to included in bruteforcing (default "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890")
 
 
 Example usage:
@@ -25,10 +25,10 @@ Example usage:
 
 Requirements:
 
-`python3`
+python3
 
-`jwt`
+jwt
 
-`itertools`
+itertools
 
-`sys`
+sys
